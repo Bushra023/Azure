@@ -1,0 +1,13 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: .
+command: >-
+  python train.py 
+  --training_data ${{inputs.diabetes_data}}
+inputs:
+  diabetes_data:
+    type: uri_file
+    path: azureml:diabetes-data:1 # Assumes you have a registered dataset named this
+environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu@latest
+compute: azureml:cpu-cluster # Replace with your actual cluster name
+display_name: github-automated-train
+experiment_name: github-training-experiment
