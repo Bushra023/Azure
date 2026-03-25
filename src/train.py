@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
-import ml_flow
+import mlflow
 
 def main():
     # 1. Handle Arguments (Matches the 'inputs' in your job.yml)
