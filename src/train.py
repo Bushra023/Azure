@@ -18,7 +18,7 @@ def main():
     # 3. Simple Training Logic
     X = df.drop('Diabetic', axis=1).values
     y = df['Diabetic'].values
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_test_split=0.30)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30)
 
     print("Training model...")
     model = LogisticRegression(C=1/0.1, solver="liblinear").fit(X_train, y_train)
