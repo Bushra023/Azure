@@ -10,7 +10,6 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--training_data", type=str)
     args, unknown = parser.parse_known_args()
-    reg = args.reg_rate
 
     # 2. Load Data
     print(f"Loading data from: {args.training_data}")
