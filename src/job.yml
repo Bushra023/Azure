@@ -12,3 +12,4 @@ compute: azureml:aml-cluster # Replace with your actual cluster name
 display_name: github-automated-train
 experiment_name: github-training-experiment
 
+
