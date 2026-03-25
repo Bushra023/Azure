@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 import mlflow
 
-mlflow_autolog()
+mlflow.autolog()
 def main():
     # 1. Handle Arguments (Matches the 'inputs' in your job.yml)
     parser = argparse.ArgumentParser()
