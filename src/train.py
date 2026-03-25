@@ -31,6 +31,7 @@ def main():
     # Optional: Save model for registration later
     os.makedirs('outputs', exist_ok=True)
     # joblib.dump(value=model, filename='outputs/diabetes_model.pkl')
+    print("AI-300 Experiment: running version 2.0 with GitHub Environments")
 
 if __name__ == "__main__":
     main()

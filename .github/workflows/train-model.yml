@@ -4,6 +4,8 @@ name: Azure Machine Learning Training
 on:
   push:
     branches: [main] # Trigger whenever I push to the main branch
+  pull_request:
+    branches: [main]
   workflow_dispatch: # Allows you to click a "Run" button manually for testing
 
 jobs:
